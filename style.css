@@ -1,0 +1,133 @@
+*{
+  box-sizing: border-box;padding: 0;margin: 0;
+}
+main{
+  display: flex;
+}
+#glavna{
+  background-image: url('./slika1.jpg');background-size: cover;background-position:  top;background-attachment: fixed;
+}
+nav{
+  background-color: orange;max-height: 100vh;position: sticky;top: 0;
+}
+nav ul{
+  height: 100%;list-style: none;display: flex;flex-direction: column;justify-content: center;
+}
+nav ul li{
+  display: flex;justify-content: center;
+}
+a{
+  text-decoration: none;color: #fff;flex: 1;padding: 1.5rem;text-align: center;
+}
+.glavna{
+  padding:3.75rem;font-size: 1.5rem;display: flex;flex-direction: column;align-items: center;color: #fff;height: 100%;background-color:rgb(0,0,0,0.3);
+}
+#glavna p{
+  margin: 2.25rem 0;padding: 1.125rem;
+}
+#glavna h1{
+  margin-bottom: 1.5rem;
+}
+span{
+  font-weight: bolder;
+}
+ul:hover{
+animation-name: animacija; animation-duration: 1.5s;animation-fill-mode: forwards;
+  }
+ a:hover{
+    background-color: goldenrod;border-radius: 0.313rem;
+  }
+  @keyframes animacija{
+    from {width:6.375rem ;}
+    to{width:15.625rem;}
+    0%{background-color: orange;}
+    100%{background-color: orangered;}
+  }
+  
+  .tekstovi{
+    display: flex;
+  }
+  .tekstovi h2{
+    text-align: center;margin: 0.75rem 0;
+  }
+  .tekst1,.tekst2{
+    flex: 1;padding: 0.7rem;
+  }
+
+  .life{
+    background-color: rgb(0,0,0,0.4); color:#fff;padding: 0.75rem;font-size: 1.25rem;
+  }
+  .life p{
+    margin-bottom: 0.75rem;overflow: auto;text-align: justify;
+  }
+  .life p:hover{
+animation-name: font1;animation-duration: 1s;animation-fill-mode: forwards;
+  }
+  @keyframes font1{
+    from{font-size:1.25rem ;} to{font-size: 1.5rem;}
+  
+  }
+  #life{
+    background-image: url('./slika2.jpg');background-position: top;background-size: cover;
+    background-repeat: no-repeat;background-attachment: fixed;
+  }
+  #life h1{
+    margin-top: 2.5rem;margin-bottom: 1.25rem;
+  }
+  #coils{
+    background-image: url('./slika3.jpg');background-size: cover;background-repeat: no-repeat;background-position: top;background-attachment: fixed;
+       
+  }
+  .coils{
+    background-color: rgb(0,0,0,0.4);color: #fff;padding: 3.75rem;
+  }
+
+  table{
+    border:0.2rem solid red;border-radius: 0.35rem;
+  }
+  #works{
+    background-image: url('./slika4.jpg');background-size:cover;background-position: center;color: #fff;background-attachment: fixed;
+  }
+  .works{
+    display: flex;flex-direction: column;align-items: center;border-collapse: collapse;padding:3rem 5rem;
+    background-color: rgb(0,0,0,0.4);
+  }
+  .works p{
+    padding: 3.5rem 0;
+  }
+ td{
+    text-align: center; border:0.2rem solid orange;border-radius: 0.3rem;
+  }
+  td{
+    padding: 1rem;font-size: 1rem;
+  }
+ th{
+  text-align: center; border:0.2rem solid orangered;border-radius: 0.3rem;
+ }
+ .bold{
+   font-weight: bold;color: orange;
+ }
+ td:hover{
+  animation-name: font2;animation-duration: 1s;animation-fill-mode: forwards; 
+ }
+ th:hover{
+  animation-name: font3;animation-duration: 1s;animation-fill-mode: forwards; 
+ }
+ .big:hover{
+  animation-name: font4;animation-duration: 1s;animation-fill-mode: forwards; 
+ }
+ @keyframes font2{
+  from{font-size:1rem ;} to{font-size: 1.25rem;}
+  from{color:#fff;} to{color:yellowgreen}
+ }
+ @keyframes font3{
+  from{font-size:1.25rem ;} to{font-size: 1.5rem;}
+  from{color:#fff;} to{color:goldenrod}
+ }
+ @keyframes font4{
+  from{font-size:1.875rem ;} to{font-size: 2.1rem;}
+  from{color:#fff;} to{color:darkgoldenrod}
+ }
+ h1,h2{
+   color: goldenrod;
+ }
